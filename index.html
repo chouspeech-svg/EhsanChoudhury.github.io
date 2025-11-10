@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ehsan's Elite Website</title>
+
+  <style>
+    /* GLOBAL */
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: #000000;
+      color: #e6e6e6;
+      scroll-behavior: smooth;
+    }
+
+    /* PURPLE GLOW HEADER */
+    header {
+      background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      box-shadow: 0 0 35px rgba(155, 90, 255, 0.8);
+      animation: headerGlow 4s infinite alternate;
+    }
+
+    @keyframes headerGlow {
+      from { box-shadow: 0 0 25px rgba(140, 80, 255, 0.6); }
+      to   { box-shadow: 0 0 60px rgba(170, 90, 255, 1); }
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 0.6rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 0 25px rgba(140, 80, 255, 0.4);
+    }
+
+    nav a {
+      color: #c29fff;
+      text-decoration: none;
+      padding: 14px 25px;
+      font-weight: 600;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+      background: #6d28d9;
+      box-shadow: 0 0 15px rgba(140, 80, 255, 1);
+      transform: translateY(-2px);
+    }
+
+    /* MAIN SECTION BOX */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #0d0d0d;
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 0 25px rgba(140, 80, 255, 0.3);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #a78bfa;
+      text-shadow: 0 0 10px rgba(160, 90, 255, 0.8);
+    }
+
+    /* PURPLE NEON CARD GRID */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      border-left: 5px solid #a78bfa;
+      box-shadow: 0 0 18px rgba(140, 80, 255, 0.3);
+      transition: all 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 28px rgba(160, 90, 255, 0.8);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #c5b5ff;
+      text-align: center;
+      padding: 18px 0;
+      margin-top: 50px;
+      box-shadow: 0 0 20px rgba(140, 80, 255, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Ehsan Choudhury</h1>
+    <p>"Becoming an elite coder — step by step."</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#soccer">Soccer Journey</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- HOME -->
+    <section id="home">
+      <h2>Home</h2>
+      <p>
+        Welcome! I'm <strong>Ehsan Choudhury</strong>, a student working every day to become an 
+        <strong>elite coder</strong>. I love soccer, video games, Cristiano Ronaldo, 
+        and creating beautiful CSS designs with my own style.
+      </p>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m Ehsan — a dedicated student who enjoys:</p>
+      <p>
+        ⚽ Playing and watching soccer<br>
+        🐐 Supporting Cristiano Ronaldo<br>
+        🎮 Gaming with friends<br>
+        💻 Coding and building elite websites<br>
+        🎨 Making advanced CSS styles
+      </p>
+      <p>I’m always learning new things and improving my skills step by step.</p>
+    </section>
+
+    <!-- SOCCER JOURNEY -->
+    <section id="soccer">
+      <h2>My Soccer Journey</h2>
+      <p>
+        Soccer is one of my biggest passions. I play whenever I can — at school, after school,
+        weekends, everywhere. I love competing, training, improving my footwork, learning new skills,
+        and watching the best players in the world.
+      </p>
+
+      <p>Things I enjoy most in soccer:</p>
+      <p>
+        ⚽ Practicing shooting and long shots<br>
+        🔥 Dribbling and footwork skills<br>
+        🏃‍♂️ Fast counter-attacks<br>
+        👟 Learning new Ronaldo moves<br>
+        🎯 Hitting top-corner goals
+      </p>
+
+      <h2>Why I Admire Cristiano Ronaldo</h2>
+      <p>
+        Cristiano Ronaldo is more than a football player — he’s an inspiration. His mindset,
+        hard work, confidence, discipline, and passion motivate me every day.
+      </p>
+
+      <p>
+        💪 His work ethic is unmatched<br>
+        🔥 Discipline = success<br>
+        ⚡ Fast, strong, elite skill<br>
+        🏆 One of the greatest of all time<br>
+        ⭐ Motivates me to work harder in coding
+      </p>
+
+      <p>
+        I try to apply his mentality to coding:
+        <strong>Stay focused. Work hard. Improve every day.</strong>
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects / Skills / Achievements</h2>
+
+      <div class="card-container">
+
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>HTML, CSS, animations, gradients, clean UI.</p>
+        </div>
+
+        <div class="card">
+          <h3>UI Design Skills</h3>
+          <p>Purple gradients, neon effects, modern layout systems.</p>
+        </div>
+
+        <div class="card">
+          <h3>Soccer Stats Project</h3>
+          <p>Coming soon...</p>
+        </div>
+
+        <div class="card">
+          <h3>Ronaldo Tribute Page</h3>
+          <p>Coming soon...</p>
+        </div>
+
+        <div class="card">
+          <h3>JavaScript Projects</h3>
+          <p>Coming soon...</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at: <strong>example@email.com</strong></p>
+      <p>More social links coming soon.</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Ehsan Choudhury | Elite Website</p>
+  </footer>
+
+</body>
+</html>
+
